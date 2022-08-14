@@ -1,0 +1,70 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.8rem;
+    border: 0;
+    border-radius: 15px 0 15px 0;
+    font-size: 0.9rem;
+    min-height: 2.8rem; min-width: 8.5rem;
+    max-width: fit-content;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    height: 100%; width: 0;
+    background: var(--pastel-green);
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background: transparent;
+}
+
+.btn img {
+    height: 1.2rem;
+    z-index: 2;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn span {
+    position: relative;
+    color: var(--white);
+    z-index: 2;
+}
+
+.btn-primary {
+    background-color: var(--green-ryb);
+    color: var(--white);
+}
+
+.btn-primary img {
+    filter: invert();
+}
+
+.btn-secondary{
+    background-color: var(--deep-saffron);
+    /* border: 2px solid var(--green-ryb); */
+    color: var(--green-ryb);
+}
+
+
+/* .btn-secondary{
+    background-color: transparent;
+    border: 2px solid var(--green-ryb);
+    color: var(--green-ryb);
+}
+
+.btn-secondary span {
+    color: var(--green-ryb);
+} */

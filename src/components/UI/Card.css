@@ -1,0 +1,17 @@
+.card {
+    background: var(--pastel-green);
+    border-radius: 15px;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.card.bg-white {
+    background: var(--white);
+}
+
+.card.bg-green {
+    background: var(--pastel-green);
+}
+
+.border-cultured {
+    border: 1px solid var(--cultured-2);
+}

@@ -1,0 +1,13 @@
+.link {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--eerie-black);
+    text-transform: lowercase;
+}
+
+.link img {
+    height: 1rem;
+}

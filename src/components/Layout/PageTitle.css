@@ -1,0 +1,19 @@
+.page-title {
+    padding-top: 2em;
+    text-transform: capitalize;
+    min-height: 30vh;
+    background: var(--cultured);
+    background-image: url('../../assets/banner-img.jpg');
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+}
+
+.page-title h1 {
+    font-size: clamp(1.8rem, 5vw, 2rem);
+    font-family: var(--literata);
+    color: var(--cultured);
+    word-wrap: wrap;
+}

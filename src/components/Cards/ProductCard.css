@@ -1,0 +1,14 @@
+.product-card.flex {
+    display: flex;
+}
+
+.product-card__top {
+    padding: 2em 1em;
+}
+
+.product-card__top img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* .product-card */

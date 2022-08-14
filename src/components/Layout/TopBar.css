@@ -1,0 +1,27 @@
+.top-bar {
+    background-color: var(--pastel-green);
+    padding: 0.3em 0;
+}
+
+.top-bar > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar__contact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.top-bar__social > *:not(:last-child) {
+    margin-right: 0.8em;
+}
+
+@media (max-width: 31.25em) {
+    .top-bar {
+        display: none;
+    }
+}

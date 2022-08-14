@@ -1,0 +1,32 @@
+.search-bar fieldset {
+    display: flex;
+    align-items: center;
+    gap: 0 0.3rem;
+    background: var(--cultured);
+    border-radius: 10px;
+    padding: 0.3em 0.8em;
+    height: 2.8rem;
+}
+
+.search-bar fieldset,
+.search-bar fieldset input {
+    border: 0;
+}
+
+.search-bar fieldset input {
+    height: 100%; width: 100%;
+    background: transparent;
+    outline: none;
+}
+
+.search-bar fieldset img {
+    height: 1.2rem;
+}
+
+/* @media (max-width : 48em) {
+    .search-bar {
+        order: 3;
+        width: 100%;
+    }
+} */
+

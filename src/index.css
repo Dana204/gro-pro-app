@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+:root {
+	--black: #000;
+	--white: #fff;
+	--cultured: #f8f9faff;
+	--cultured-2: #f2f4f6;
+	--slate-gray: #6c757d;
+	--eerie-black: #1f1f1f;
+	--pastel-green: #77dd77;
+	/* --pastel-green: #BEE5B0; */
+	/* --pastel-green: #79d45ecc; */
+	--green-ryb: #28A228;
+	--middle-yellow: #ffea00ff;
+	--deep-saffron: #ff7b00;
+	/* --deep-saffron: #ff5400; */
+	/* --deep-saffron: #f48c06; */
+	/* --deep-saffron: #e85d04; */
+	/* --deep-saffron: #FF993Eff; */
+	--maximum-yellow-red: #FFBE5Cff;
+	--olive-drab-3: #728C20ff;
+	--rosso-corsa: #D41D00ff;
+	/* --green-ryb: #55a630ff; */
+	--literata: 'Literata', serif;
+	--box-shadow: 0 15px 30px rgba(0,0,0,0.04);
+	--box-shadow2: -20px 20px 20px rgba(0,0,0,0.02);
+	--box-shadow3: rgba(0,0,0,0.08) 0px 7px 29px 0px;;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins',
+	sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	letter-spacing: 0.7px;
+	color: var(--eerie-black);
+	text-transform: capitalize;
+	
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--literata);
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+h2 {
+	font-size: clamp(1.4rem, 5vw, 1.875rem);
+}
+
+.container {
+	width: min(93%, 72.5rem);
+	margin-inline: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	/* color: var(--slate-gray); */
+	font-size: 0.95rem;
+	text-transform: none;
+}
+
+section {
+	padding: 3em 0;
+}
+
+.rotate,
+.slide-right,
+.slide-left {
+	transition: transform 0.5s ease-in-out;
+}
+
+.rotate:hover {
+	transform: rotate(360deg);
+}
+
+.slide-right:hover {
+	transform: translateX(8px);
+}
+
+.slide-left:hover {
+	transform: translateX(-8px);
+}
+
+/* main {
+	padding: 2em 0;
+} */
+
+
+/* CATEGORY PAGE */
+.category .container {
+	position: relative;
+}
+
+.category__main {
+	position: relative;
+	left: 0;
+	width: calc(100% - 16rem);
+}
+
+@media (max-width: 48em) {
+	.sidebar {
+		position: relative;
+		margin-top: 2em;
+	}
+
+	.category__main,
+	.sidebar {
+		width: 100%;
+	}
 }

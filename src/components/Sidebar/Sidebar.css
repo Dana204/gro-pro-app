@@ -1,0 +1,7 @@
+.sidebar {
+    position: absolute;
+    top: 0; right: 0;
+    background: var(--cultured);
+    height: 60vh; width: 15rem;
+    border-radius: 15px;
+}
