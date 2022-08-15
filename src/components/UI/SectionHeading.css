@@ -48,6 +48,14 @@
         justify-content: center;
     }
 
+    .section-title__left > div {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .section-title__left > div::before {
+        display: none;
+    }
     
     .section-title__right p {
         text-align: center;

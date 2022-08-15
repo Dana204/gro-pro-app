@@ -1,12 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Hero.css';
 
 import Button from '../UI/Button';
 import Card from '../UI/Card';
-
-import BananaImg from '../../assets/banana.png';
-import CabbageImg from '../../assets/cabbage.png';
 
 const Hero = () => {
     return (
@@ -35,16 +31,15 @@ const Hero = () => {
                     </Card>
                 </div>
                 <div className='hero__right'>
-                    <div>
-                        <h2>Some Text Goes Here</h2>
-                        <Link to='/about-us'>Shop Now</Link>
-                        {/* <Button label='Shop Now' to='/about-us'/> */}
-                        <img src={BananaImg} alt='banana' />
+                    <div className='hero__right-card'>
+                        <h2>Lorem ipsum dolor sit</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <Button label='Sign Up' to='/about-us' className='hero__right-card-btn' primary/>
                     </div>
-                    <div>
-                        <h2>Some Text Goes Here</h2>
-                        {/* <Button label='Shop Now' to='/about-us'/> */}
-                        <img src={CabbageImg} alt='banana' />
+                    <div className='hero__right-card'>
+                        <h2>Lorem ipsum dolor sit</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <Button label='Shop Now' to='/about-us' className='hero__right-card-btn'/>
                     </div>
                 </div>
             </div>

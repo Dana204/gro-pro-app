@@ -1,21 +1,27 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import Card from '../UI/Card';
+import { Link } from 'react-router-dom';
 import './CategoryCard.css';
 
-const CategoryCard = ({src, alt, title}) => {
+import Card from '../UI/Card';
+import Button from '../UI/Button';
+
+const CategoryCard = ({src, alt, name}) => {
     const navigate = useNavigate();
 
     const onClickHandler = () => {
-        navigate(`/category/${title}`);
+        navigate(`/category/${name}`);
     }
+
     return (
         <Card border className='category-card' onClick={onClickHandler}>
-            <div className='category-card__blob'>
-
+            <div><Link to='/'>{name}</Link></div>
+            {/* <div><Link to='/'>View All</Link></div> */}
+            {/* <div><Link to='/'>View {name}</Link></div> */}
             <img src={src} alt={alt}/>
-            </div>
-            <span>{title}</span>
+            {/* <span>View All</span> */}
+            {/* <Button label='View More' to='/' primary/> */}
+            {/* <span>{name}</span> */}
         </Card>
     )
 }

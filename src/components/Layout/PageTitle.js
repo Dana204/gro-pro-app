@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import './PageTitle.css'
 
 const PageTitle = () => {
@@ -13,6 +14,9 @@ const PageTitle = () => {
                     <div className='page-title'>
                         <div className='container'>
                             <h1>{currentPageTitle}</h1>
+                            <div className='page-title__breadcrumb'>
+                                <Link to=''>Home</Link>
+                                <span>{currentPageTitle}</span></div>
                         </div>
                     </div>
                 )

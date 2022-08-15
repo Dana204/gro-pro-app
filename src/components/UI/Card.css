@@ -11,7 +11,3 @@
 .card.bg-green {
     background: var(--pastel-green);
 }
-
-.border-cultured {
-    border: 1px solid var(--cultured-2);
-}

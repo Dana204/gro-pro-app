@@ -1,5 +1,14 @@
 .card-list {
     display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(13rem, 1fr)); */
+    gap: 1rem;
+    margin-top: 2em;
+}
+
+.card-list__row4 {
     grid-template-columns: repeat(auto-fit,minmax(14rem, 1fr));
-    gap: 1.5rem;
+}
+
+.card-list__row5 {
+    grid-template-columns: repeat(auto-fit,minmax(12rem, 1fr));
 }

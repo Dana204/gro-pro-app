@@ -1,7 +1,9 @@
-import fruitImg from '../assets/fruit.png';
-import vegetableImg from '../assets/vegetable.png';
-import meatImg from '../assets/meat.png';
-import dairyImg from '../assets/dairy.png';
+// import fruitImg from '../assets/fruit.png';
+import fruitImg from '../assets/orange.png';
+import vegetableImg from '../assets/cabbage.png';
+import meatImg from '../assets/steak.png';
+import dairyImg from '../assets/milk.png';
+import spicesImg from '../assets/paprika.png';
 
 export const categories = [
     {   
@@ -23,6 +25,11 @@ export const categories = [
         name: 'dairy',
         src: dairyImg,
         alt: 'dairy',
+    },
+    {
+        name: 'spices',
+        src: spicesImg,
+        alt: 'spices',
     },
 ]
 
@@ -82,6 +89,33 @@ export const products = [
         name: 'Cabbage',
         price: 4.00,
         category: 'vegetables',
+        img: fruitImg,
+        rating: 5,
+        description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+    },
+    {
+        id: 5,
+        name: 'Milk',
+        price: 4.00,
+        category: 'dairy',
+        img: fruitImg,
+        rating: 5,
+        description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+    },
+    {
+        id: 6,
+        name: 'Steak',
+        price: 4.00,
+        category: 'meat',
+        img: fruitImg,
+        rating: 5,
+        description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+    },
+    {
+        id: 7,
+        name: 'Paprika',
+        price: 4.00,
+        category: 'spices',
         img: fruitImg,
         rating: 5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',

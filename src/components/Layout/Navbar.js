@@ -3,8 +3,8 @@ import { NavLink, Link } from 'react-router-dom';
 
 import { categories, mainPages } from '../../data/data';
 
-import menuImg from '../../assets/menu4.png';
-import categoryImg from '../../assets/category2.png';
+import menuImg from '../../assets/menu.png';
+import categoryImg from '../../assets/category.png';
 import instagramIcon from '../../assets/instagram.png';
 import facebookIcon from '../../assets/facebook.png';
 import twitterIcon from '../../assets/twitter.png';

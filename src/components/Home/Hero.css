@@ -9,7 +9,7 @@
 
 .hero__left {
     background-image: linear-gradient(120deg, var(--cultured) 40%, rgba(0,0,0,0) 60%),
-    url('../../assets/banner4.jpg');
+    url('../../assets/hero-banner.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,73 +92,61 @@
 
 .hero__right {
     flex: 1 1 20%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(14rem, 1fr));
     gap: 1rem;
-    min-width: 200px;
 }
 
-.hero__right div {
-    flex: 1 1 auto;
-    min-width: 13.75rem;
+.hero__right-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1em;
     border-radius: 0 30px 30px 0;
 }
 
-.hero__right div:first-child {
+.hero__right-card:first-child {
     background: var(--cultured);
 }
 
-.hero__right div:last-child {
+.hero__right-card:last-child {
     background: var(--pastel-green);
 }
 
-
-.hero__right div h2 {
-    width: 10ch;
-    /* text-align: left; */
+.hero__right-card h2 {
+    margin-bottom: 0.5em;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.hero__right div .btn {
+.hero__right-card .btn {
     margin-top: 0.8em;
 }
 
-.hero__right div img {
-    text-align: right;
-    margin-top: 0.8em;
-    margin-left: auto;
-}
-
-.hero__right div:last-child img {
+.hero__right-card:last-child img {
     height: 6rem; 
     transform: scaleX(-1);
 }
-.hero__right div:first-child img {
+.hero__right-card:first-child img {
     height: 5rem; 
     transform: scaleX(-1);
 }
 
-.hero__right div:last-child img {
-    height: 6rem; 
-    transform: scaleX(-1);
+.hero__right-card-btn {
+    display: block;
+    margin-left: auto;
 }
-
-
 
 
 /* 900px */
 @media (max-width: 56.25em) {
-
     .hero {
         flex-direction: column;
         row-gap: 3rem;
     }
 
-
     .hero__left,
-    .hero__right div {
+    .hero__right-card {
         border-radius: 30px;
     }
 }
@@ -172,8 +160,8 @@
         justify-content: center;
         align-items: center;
         background-image: linear-gradient(130deg, rgba(255, 255, 255, 0), var(--cultured), 
-                                                    var(--cultured-2), rgba(255,255,255,0)),
-                                                    url('../../assets/banner4.jpg');
+                                                    var(--cultured), rgba(255,255,255,0)),
+                                                    url('../../assets/hero-banner.jpg');
         background-size: cover;
         background-attachment: scroll;
     }

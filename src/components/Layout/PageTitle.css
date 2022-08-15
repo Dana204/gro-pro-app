@@ -1,19 +1,36 @@
 .page-title {
     padding-top: 2em;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     min-height: 30vh;
     background: var(--cultured);
-    background-image: url('../../assets/banner-img.jpg');
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-
+    background-image: url('../../assets/page-title-banner.jpg');
 }
 
-.page-title h1 {
-    font-size: clamp(1.8rem, 5vw, 2rem);
-    font-family: var(--literata);
+.page-title .container h1 {
+    /* font-size: clamp(1.8rem, 5vw, 2rem); */
     color: var(--cultured);
     word-wrap: wrap;
+}
+
+.page-title  .container > div {
+    font-size: 1rem;
+    margin-top: 1em;
+}
+
+.page-title .container > div a {
+    color: var(--white);   
+    padding-right: 0.8em;
+    margin-right: 0.8em;
+    border-right: 2px solid var(--white); 
+    transition: color 0.5s ease-in-out;
+}
+
+.page-title .container > div a:hover {
+    color: var(--deep-saffron);
+}
+
+.page-title .container > div span {
+    display: inline-block;
+    text-transform: capitalize;
+    color: var(--white);    
 }

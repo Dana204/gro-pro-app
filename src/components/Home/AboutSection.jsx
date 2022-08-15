@@ -4,7 +4,7 @@ import './AboutSection.css';
 import SectionHeading from '../UI/SectionHeading';
 import Card from '../UI/Card';
 
-import mobileImg from '../../assets/phone-sm.png';
+import mobileImg from '../../assets/mobile.png';
 import checkImg from '../../assets/check-mark.png';
 
 const AboutSection = () => {
@@ -14,9 +14,8 @@ const AboutSection = () => {
                 <SectionHeading
                     title='Why Choose Us?'
                     subtitle='About us'
-                    // subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut '
                     btnLabel='About Us'
-                    btnLink='/about-us/'
+                    btnLink='/about-us'
                 />
 
                 <div className='about-section__row'>
