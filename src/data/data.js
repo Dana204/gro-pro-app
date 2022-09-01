@@ -1,35 +1,49 @@
-// import fruitImg from '../assets/fruit.png';
-import fruitImg from '../assets/orange.png';
-import vegetableImg from '../assets/cabbage.png';
-import meatImg from '../assets/steak.png';
-import dairyImg from '../assets/milk.png';
-import spicesImg from '../assets/paprika.png';
+import cabbageImg from '../assets/cabbage.png';
+import milkImg from '../assets/milk.png';
+import paprikaImg from '../assets/paprika.png';
+
+import orangeImg from '../assets/orange.png';
+import bananaImg from '../assets/banana.png';
+import passionImg from '../assets/passion.png';
+
+import pancakeImg from '../assets/pancakes.jpg';
+import avocadoToastImg from '../assets/avocado-toast.jpg';
+import smoothieBowlImg from '../assets/smoothie-bowl.jpg';
+import omeletteImg from '../assets/omelette.jpg';
+import chickenAsparagusImg from '../assets/chicken-asparagus.jpg';
+import steakImg from '../assets/steak.jpg';
+import salmonImg from '../assets/salmon.jpg';
+import quesadillaImg from '../assets/quesadilla.jpg';
+import berryFruitCakeImg from '../assets/berry-fruit-cake.jpg';
+import ojImg from '../assets/oj.jpg';
+
+
 
 export const categories = [
     {   
-        name: 'fruits',
-        src: fruitImg,
-        alt: 'fruit'
+        name: 'breakfast',
+        src: pancakeImg,
+        alt: 'breakfast'
     },
     {
-        name: 'vegetables',
-        src: vegetableImg,
-        alt: 'vegetable',
+        name: 'lunch',
+        src: quesadillaImg,
+        alt: 'lunch',
     },
     {
-        name: 'meat',
-        src: meatImg,
-        alt: 'meat',
+        name: 'dinner',
+        src: salmonImg,
+        alt: 'dinner',
     },
     {
-        name: 'dairy',
-        src: dairyImg,
-        alt: 'dairy',
+        name: 'dessert',
+        src: berryFruitCakeImg,
+        alt: 'dessert',
     },
     {
-        name: 'spices',
-        src: spicesImg,
-        alt: 'spices',
+        name: 'beverages',
+        src: ojImg,
+        alt: 'beverages',
     },
 ]
 
@@ -59,67 +73,106 @@ export const mainPages = [
 export const products = [
     {
         id: 1,
-        name: 'Banana',
+        name: 'Pancakes',
         price: 4.00,
-        category: 'fruits',
-        img: fruitImg,
+        category: 'breakfast',
+        img: pancakeImg,
         rating: 5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
     },
     {
         id: 2,
-        name: 'Chicken',
+        name: 'Avocado Toast',
         price: 4.00,
-        category: 'meat',
-        img: fruitImg,
+        category: 'breakfast',
+        img: avocadoToastImg,
         rating: 4.5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
     },
     {
         id: 3,
-        name: 'Apple',
+        name: 'smoothie Bowl',
         price: 4.00,
-        category: 'fruits',
-        img: fruitImg,
-        rating: 5,
+        category: 'breakfast',
+        img: smoothieBowlImg,
+        rating: 4.5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
     },
     {
         id: 4,
-        name: 'Cabbage',
+        name: 'omelette',
         price: 4.00,
-        category: 'vegetables',
-        img: fruitImg,
-        rating: 5,
+        category: 'breakfast',
+        img: omeletteImg,
+        rating: 4.5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
     },
     {
         id: 5,
-        name: 'Milk',
+        name: 'Chicken Asparagus',
         price: 4.00,
-        category: 'dairy',
-        img: fruitImg,
-        rating: 5,
+        category: 'dinner',
+        img: chickenAsparagusImg,
+        rating: 4.5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
     },
     {
         id: 6,
         name: 'Steak',
         price: 4.00,
-        category: 'meat',
-        img: fruitImg,
-        rating: 5,
+        category: 'dinner',
+        img: steakImg,
+        rating: 4.5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
     },
     {
         id: 7,
-        name: 'Paprika',
+        name: 'Salmon',
         price: 4.00,
-        category: 'spices',
-        img: fruitImg,
-        rating: 5,
+        category: 'dinner',
+        img: salmonImg,
+        rating: 4.5,
         description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
     },
+    {
+        id: 8,
+        name: 'Quesadilla',
+        price: 4.00,
+        category: 'lunch',
+        img: quesadillaImg,
+        rating: 4.5,
+        description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
+    },
+    {
+        id: 9,
+        name: 'Berry Fruit Cake',
+        price: 4.00,
+        category: 'dessert',
+        img: berryFruitCakeImg,
+        rating: 4.5,
+        description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
+    },
+    {
+        id: 10,
+        name: 'Orange Juice',
+        price: 4.00,
+        category: 'dessert',
+        img: ojImg,
+        rating: 4.5,
+        description: 'Sumptuous, filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing to get you out of bed. The goodness of rolled wholegrain oats are combined with a variety of tangy organic berries, and baked into crispy clusters that are as nutritious.',
+        ingredients: 'Sumptuous, filling, and temptingly healthy, our Biona Organic.',
+    },
+    
+    
     
     
 ]

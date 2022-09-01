@@ -1,21 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { uiActions } from '../../store/ui-slice';
-import Navbar from './Navbar';
 
-import logo from '../../assets/logo.png';
 import userIcon from '../../assets/user.png';
 import likesIcon from '../../assets/heart-outline.png';
 import cartIcon from '../../assets/cart.png';
-import './Header.css';
-import SearchBar from '../SearchBar/SearchBar';
+
 import Logo from '../UI/Logo';
+import SearchBar from '../SearchBar/SearchBar';
+import Navbar from './Navbar';
+import './Header.css';
 
 
 const Header = () => {
     const dispatch = useDispatch();
-    const totalCartQuantity = useSelector((state) => state.cart.totalCartQuantity);
+    // const totalCartQuantity = useSelector((state) => state.cart.totalCartQuantity);
+    const cartItems = useSelector((state) => state.cart.items);
 
     const toggleCartHandler = () => {
         dispatch(uiActions.toggle());
@@ -31,14 +31,13 @@ const Header = () => {
                         <img src={userIcon} alt='user icon' className='rotate' />
                     </div>
                     <div>
-                        <Link to='/favourites'>
                         <img src={likesIcon} alt='likes icon' className='rotate' />
-                        </Link>
                         <span>0</span>
                     </div>
                     <div>
                         <img src={cartIcon} alt='cart icon' className='rotate' onClick={toggleCartHandler} />
-                        <span>{totalCartQuantity}</span>
+                        <span>{cartItems.length}</span>
+                        {/* <span>{totalCartQuantity}</span> */}
                     </div>
                 </div>
             </div>

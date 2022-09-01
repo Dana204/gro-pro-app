@@ -1,27 +1,24 @@
 .category-card {
-    min-height: 10rem;
-    min-width: 10rem;
-    padding: 1.5em 2.5em;
+    max-height: 10rem; min-width: 10rem;
     text-align: center;
+    cursor: pointer;
     position: relative;
 }
 
 .category-card > div:first-child {
     position: absolute;
-    top: 0; left: 0;
+    top: -0.9px; left: 0;
     padding: 0.5em 1.5em 0.5em 1em;
     font-size: 0.9rem;
-    background: var(--pastel-green);
-    border-radius: 15px 0 30px 0;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px 0 15px 0;
 }
 
 .category-card > img {
-    display: block;
-    height: 6rem;
-    margin: 0.8em auto;
+    height: 100%; width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
-/* .category-card span {
-    display: block;
-} */
 

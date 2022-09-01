@@ -14,14 +14,9 @@ const CategoryCard = ({src, alt, name}) => {
     }
 
     return (
-        <Card border className='category-card' onClick={onClickHandler}>
-            <div><Link to='/'>{name}</Link></div>
-            {/* <div><Link to='/'>View All</Link></div> */}
-            {/* <div><Link to='/'>View {name}</Link></div> */}
+        <Card border className='category-card slide-up' onClick={onClickHandler}>
+            <div>{name}</div>
             <img src={src} alt={alt}/>
-            {/* <span>View All</span> */}
-            {/* <Button label='View More' to='/' primary/> */}
-            {/* <span>{name}</span> */}
         </Card>
     )
 }

@@ -28,11 +28,6 @@
     background: transparent;
 }
 
-.btn img {
-    height: 1.2rem;
-    z-index: 2;
-}
-
 .btn:hover::before {
     width: 100%;
 }
@@ -48,9 +43,6 @@
     color: var(--white);
 }
 
-.btn-primary img {
-    filter: invert();
-}
 
 .btn-secondary{
     background-color: var(--deep-saffron);
