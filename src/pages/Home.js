@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { categories, products as data} from '../data/data';
 
 import SectionHeading from '../components/UI/SectionHeading';
 import Button from '../components/UI/Button';
@@ -7,15 +9,16 @@ import CategoryCard from '../components/Cards/CategoryCard';
 import ProductCard from '../components/Cards/ProductCard';
 import CardList from '../components/Cards/CardList';
 
+
+import leafImg from '../assets/leaf.png';
 import mobileImg from '../assets/mobile.png';
 import checkImg from '../assets/check-mark.png';
-
-import { categories, products as data} from '../data/data';
-
+import rightArrowImg from '../assets/right-arrow.png';
+import leftArrowImg from '../assets/left-arrow.png';
 
 const Home = () => {
     const [activeLabel, setActiveLabel] = useState('all');
-    const [products, setProducts] = useState(data);
+    // const [products, setProducts] = useState(data);
     // console.log(activeLabel);
     return (
         <Fragment >
@@ -51,9 +54,9 @@ const Home = () => {
                             <Button label='Sign Up' to='/about-us' className='hero__right-card-btn' primary/>
                         </div>
                         <div className='hero__right-card'>
+                            <img src={leafImg} alt='leaf'/>
                             <h2>Lorem ipsum dolor sit</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <Button label='Shop Now' to='/about-us' className='hero__right-card-btn'/>
                         </div>
                     </div>
                 </div>
@@ -63,8 +66,8 @@ const Home = () => {
                     title='Wide List of Categories'
                     subtitle='Categories'
                     subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
-                    btnLabel='View Products'
-                    btnLink='/category/all'
+                    btnLabel='View Meals'
+                    btnLink='/meals'
                     btnPrimary
                 />
                 <CardList data={categories} Component={CategoryCard} rowAmount={5} /> 
@@ -137,9 +140,10 @@ const Home = () => {
 
             {/* PRODUCTS SECTION */}
             <section className='products-section container'>
+                
                 <SectionHeading
-                    title='Products'
-                    subtitle='Products'>
+                    title='Featured Meals'
+                    subtitle='Meals'>
                         <div className='products-section__labels'>
                             <span onClick={() => setActiveLabel('all')} className={activeLabel === 'all' ? 'active' : ''}>All</span>
                             {
@@ -149,7 +153,23 @@ const Home = () => {
                             }
                         </div>
                 </SectionHeading>  
-                <CardList data={data} Component={ProductCard} />
+                <CardList data={data} Component={ProductCard}/>
+                <Link to='/' className='products-section__all-link'>
+                    <img src={leftArrowImg} alt='left arrow'/>
+                    <span>All Products</span>
+                    <img src={rightArrowImg} alt='right arrow'/>
+                </Link>
+            </section>
+
+            {/* REVIEW SECTION */}
+            <section className='review-section'>
+                <div className='container'>
+                <SectionHeading
+                    title='Customer Testimonials'
+                    subtitle='Reviews'
+                /> 
+                </div>
+                            
             </section>
             
         </Fragment>

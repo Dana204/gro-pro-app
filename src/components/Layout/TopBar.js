@@ -15,19 +15,21 @@ const TopBar = () => {
         <div className='top-bar'>
             <div className='container'>
                 <div className='top-bar__contact'>
-                <ContactLink
-                    src = {emailIcon}
-                    alt='email icon'
-                    label='gropro@gmail.com'
-                    action='mailto:gropro@gmail.com'
-                />
+                    <ContactLink
+                        src = {emailIcon}
+                        alt='email icon'
+                        label='gropro@gmail.com'
+                        action='mailto:gropro@gmail.com'
+                        className='top-bar__contact-link'
+                    />
 
-                <ContactLink
-                    src = {phoneIcon}
-                    alt='phone icon'
-                    label='876-883-9999'
-                    action='tel:8768839999'
-                />
+                    <ContactLink
+                        src = {phoneIcon}
+                        alt='phone icon'
+                        label='(876)-883-9999'
+                        action='tel:8768839999'
+                        className='top-bar__contact-link'
+                    />
                 </div>
                 <div className='top-bar__social'>
                     <SocialLink socialPath='#' src={instagramIcon} alt='instagram icon' />

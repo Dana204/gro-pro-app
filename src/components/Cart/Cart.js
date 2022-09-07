@@ -50,7 +50,7 @@ const Cart = () => {
             <div className='cart__footer'>
                 <Card green className='cart__footer-card'>
                     <span>Total: ${cartTotalCost.toFixed(2)}</span>
-                    <Button label='Checkout' type='submit' submitBtn className='product-card__body-btn' primary/>
+                    <Button label='Checkout' type='submit' className='product-card__body-btn' primary/>
                 </Card>
             </div>
         </Card>

@@ -1,11 +1,3 @@
-import cabbageImg from '../assets/cabbage.png';
-import milkImg from '../assets/milk.png';
-import paprikaImg from '../assets/paprika.png';
-
-import orangeImg from '../assets/orange.png';
-import bananaImg from '../assets/banana.png';
-import passionImg from '../assets/passion.png';
-
 import pancakeImg from '../assets/pancakes.jpg';
 import avocadoToastImg from '../assets/avocado-toast.jpg';
 import smoothieBowlImg from '../assets/smoothie-bowl.jpg';
@@ -16,7 +8,6 @@ import salmonImg from '../assets/salmon.jpg';
 import quesadillaImg from '../assets/quesadilla.jpg';
 import berryFruitCakeImg from '../assets/berry-fruit-cake.jpg';
 import ojImg from '../assets/oj.jpg';
-
 
 
 export const categories = [
@@ -67,6 +58,10 @@ export const mainPages = [
     {
         name : 'Contact Us',
         url : '/contact-us'
+    },
+    {
+        name : 'Menu',
+        url : '/menu'
     },
 ]
 

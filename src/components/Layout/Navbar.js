@@ -39,7 +39,7 @@ const Navbar = () => {
                     </div>
                     <nav>
                         {
-                            mainPages.map((page, i) => (
+                            mainPages.slice(0,-1).map((page, i) => (
                                 <NavLink key={i} className={({isActive}) => isActive ? 'active' : ''} to={page.url} onClick={closeMenuHandler}>
                                     {page.name}
                                 </NavLink>

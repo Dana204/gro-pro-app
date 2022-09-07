@@ -35,7 +35,6 @@
     flex-direction: column;
     row-gap: 0.8rem;
     transition: left 0.5s ease-in-out, opacity 0.4s ease-in-out;
-    /* transition: all 0.5s ease-in-out; */
 }
 
 .product-card__top-left img {
@@ -44,12 +43,13 @@
 }
 
 .product-card__top > span {
-    bottom: -1px; right: 0;
+    bottom: -0.6px; right: 0;
     padding: 0.2em 1.2em;
     min-width: 5rem;
     text-align: center;
     border-radius: 15px 0 15px 0;
     border: 1px solid var(--white);
+    font-weight: 500;
 }
 
 .product-card__top > img {
@@ -84,7 +84,7 @@
     font-family: var(--literata);
     font-weight: 500;
     margin-top: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-right: 1em;
 }
 

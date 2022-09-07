@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './ContactLink.css';
 
-const  ContactLink = ({src, alt, label, action}) => {
+const  ContactLink = ({src, alt, label, action, className}) => {
     const onClickHandler = (e) => {
         window.location.href = action;
         e.preventDefault();
     }
 
     return (
-        <Link onClick={onClickHandler} to='#' className='link'>
+        <div onClick={onClickHandler} className={`link ${className ? className : ''}`}>
             <img src={src} alt={alt} />
-            {label}
-        </Link>
+            <span>{label}</span>
+        </div>
     )
 }
 

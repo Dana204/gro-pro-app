@@ -31,7 +31,6 @@
 .header__top-right div {
     justify-content: center;
     background: var( --cultured-2);
-    /* background: var( --cultured-2); */
     width: 1.9rem;
     height: 1.9rem;
     border-radius: 50%;

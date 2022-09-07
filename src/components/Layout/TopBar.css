@@ -15,6 +15,13 @@
     gap: 1rem;
 }
 
+.top-bar__contact-link span {
+    font-size: 0.85rem;
+}
+
+.top-bar__contact-link img {
+    height: 1rem;
+}
 
 .top-bar__social > *:not(:last-child) {
     margin-right: 0.8em;
